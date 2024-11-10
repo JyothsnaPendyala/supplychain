@@ -11,6 +11,8 @@ def connect_to_s3_and_load_data():
     region = os.getenv('region')
     key = os.getenv('key')
 
+    print("credsssssss:", aws_access_key_id, aws_secret_access_key, bucket, region, key)
+
     # Check if the credentials are available
     if aws_access_key_id is None or aws_secret_access_key is None or bucket is None or region is None or key is None:
         print("Error: Missing credentials")
